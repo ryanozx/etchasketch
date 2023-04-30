@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(220, 226, 226);
+}
+
+.buttonHolder {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3vh;
+}
+
+button{
+    font-size: 16px;
+    border-radius: 20%;
+    height: 100%;
+    width: 100%;
+    margin-inline: 5px;
+    background-color: inherit;
+    border-width: 2px;
+    border-color: black;
+    color: black;
+}
+
+.selectedButton {
+    background-color: black;
+    color: white;
+}
+
+#currColour {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+    opacity: 1;
+    margin-inline: 10px;
+    box-shadow: gray 0px 5px 8px;
+}
+
+input[type='color'] {
+    opacity: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 70vh;
+    margin: auto;
+    box-shadow: gray 0px 5px 8px;
+}
+
+.container > div {
+    width: 6.25%;
+    height: auto;
+    background-color: white;
+}
+
+.container .hoverSquare {
+    background-color: black;
+}
